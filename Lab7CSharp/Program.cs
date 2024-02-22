@@ -8,12 +8,15 @@ namespace Lab7CSharp
 {
     static class Program
     {
+        public static FormMenu formMenu;
+
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormMenu());
+            formMenu = new FormMenu();
+            Application.Run(formMenu);
         }
     }
 }

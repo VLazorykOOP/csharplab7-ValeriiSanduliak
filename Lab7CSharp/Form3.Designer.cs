@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -43,11 +44,22 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Task3";
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(12, 393);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(113, 45);
+            this.button3.TabIndex = 8;
+            this.button3.Text = "Menu";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.label1);
             this.Name = "Form3";
             this.Text = "Form3";
@@ -59,5 +71,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button3;
     }
 }
