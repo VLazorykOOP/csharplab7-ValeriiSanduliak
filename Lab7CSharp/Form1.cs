@@ -24,6 +24,7 @@ namespace Lab7CSharp
             timer.Tick += Timer_Tick;
 
             angle = 0;
+            this.FormClosing += Form1_FormClosing;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -60,6 +61,11 @@ namespace Lab7CSharp
         {
             Random random = new Random();
             return random.Next(50, 100);
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
