@@ -37,5 +37,10 @@ namespace Lab7CSharp
             form3.Show();
             this.Hide();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

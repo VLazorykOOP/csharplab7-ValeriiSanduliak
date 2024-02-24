@@ -19,8 +19,6 @@ namespace Lab7CSharp
         public Form2()
         {
             InitializeComponent();
-
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             this.FormClosing += Form2_FormClosing;
         }
 
@@ -55,16 +53,11 @@ namespace Lab7CSharp
             }
         }
 
-        private void pictureBox1_Click_EventHandler(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
             MouseEventArgs mouseEventArgs = (MouseEventArgs)e;
-            pictureBox1_Click(sender, mouseEventArgs);
-        }
-
-        private void pictureBox1_Click(object sender, MouseEventArgs e)
-        {
             Bitmap bitmap = new Bitmap(pictureBox1.Image);
-            pickedColor = bitmap.GetPixel(e.X, e.Y);
+            pickedColor = bitmap.GetPixel(mouseEventArgs.X, mouseEventArgs.Y);
             DisplayPickedColor();
         }
 

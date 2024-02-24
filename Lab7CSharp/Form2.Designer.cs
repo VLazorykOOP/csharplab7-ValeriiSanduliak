@@ -53,12 +53,12 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(341, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(341, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(447, 426);
+            this.pictureBox1.Size = new System.Drawing.Size(575, 491);
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_EventHandler);
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // button1
             // 
@@ -75,14 +75,14 @@
             this.pickedColorLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pickedColorLabel.Location = new System.Drawing.Point(12, 177);
+            this.pickedColorLabel.Location = new System.Drawing.Point(12, 168);
             this.pickedColorLabel.Name = "pickedColorLabel";
-            this.pickedColorLabel.Size = new System.Drawing.Size(122, 26);
+            this.pickedColorLabel.Size = new System.Drawing.Size(180, 27);
             this.pickedColorLabel.TabIndex = 4;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(140, 177);
+            this.pictureBox2.Location = new System.Drawing.Point(198, 168);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(98, 28);
             this.pictureBox2.TabIndex = 5;
@@ -100,7 +100,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(15, 393);
+            this.button3.Location = new System.Drawing.Point(12, 446);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(113, 45);
             this.button3.TabIndex = 7;
@@ -112,7 +112,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(919, 494);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.pictureBox2);
